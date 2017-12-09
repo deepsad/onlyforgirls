@@ -1,17 +1,31 @@
-<html DOCTYPE>
+{% load static %}
+<html>
 <head>
     <title>Only For Girls</title>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+    <link href="https://fonts.googleapis.com/css?family=Alice|Prata" rel="stylesheet">
 </head>
 <body>
-    <div>
+    <div class="page-header">
         <h1><a href="/">Only For Girls</a></h1>
     </div>
+<div class="content container">
+    <div class="row">
+        <div class="col-md-8">
+
 {% for post in posts %}
-    <div>
+            <div class="post">
         <h2><a href="">{{post.title}}</a></h2>
         <p>{{ post.text|linebreaksbr }}</p>
-        <p>Опубликовано: {{ post.published_date}}</p>
-    </div>
+        <div class="date">
+        <p>{{ post.published_date}}</p>
+                </div>
+            </div>
 {% endfor %}
+</div>
+</div>
+</div>
 </body>
 </html>
