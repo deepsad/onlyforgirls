@@ -25,7 +25,7 @@ SECRET_KEY = 'oe_(=u2r=($&i(df18$_*nc)-_1b_$u%y1k4%$-g-qgz#2#=rx'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1','forgirls.pythonanywhere.com']
+ALLOWED_HOSTS = ['127.0.0.1','chtozhe.pythonanywhere.com']
 
 
 # Application definition
